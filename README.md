@@ -27,6 +27,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of my implemented app:
+
 ![](https://i.imgur.com/Bdbsr08.gif)
 
 GIF created with [ezgif](https://ezgif.com/video-to-gif).
