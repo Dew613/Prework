@@ -34,16 +34,16 @@ GIF created with [ezgif](https://ezgif.com/video-to-gif).
 
 ## Notes
 
-A lot of time was spent on getting the UI correct. However, I tested the app only on the Iphone 11. When I tested it on other phone, I came to the realization that my UI gets messed up because of the differing screen sizes. By this time I had already implemented most of the features that were in my ability. So a good takeaway is to make sure that the UI works for many models before continuing with the actual coding. 
+A lot of time was spent on getting the UI correct. However, I only tested the app on the iphone 11. When I tested it on other phones, I came to the realization that my UI gets messed up because of the differing screen sizes. By this time I had already implemented most of the features that were in my ability to implement. So a good takeaway is to make sure that the UI works for different models before continuing with the actual coding. 
 
-Another challenge was trying to implement a formatted text field for the bill. I wanted to make it so that the text field displayed: "0.00".  
-*    On input 1 it would display: "0.01".  
-*    On input 2 it would display: "0.12".  
-*    On input 3 it would display: "1.23".   
+Another challenge was trying to implement a formatted text field for the bill. I wanted to make it so that the text field displayed: **"0.00"**.  
+*    On input 1 it would display: **"0.01"**.  
+*    On input 2 it would display: **"0.12"**.  
+*    On input 3 it would display: **"1.23"**.   
 
-And so on. In the end I failed to get a working implementation and decided it would be best to have the input just remain as integer. If I made the keypad include a decimal then users would be able to input something like: "1.00.1.1" crashing the app. So the decision to keep the keyboard as just numbers is justified.
+And so on. In the end I failed to get a working implementation and decided it would be best to have the input just remain as an integer. If I made the keypad include decimals then users would be able to input something like: **"1.00.1.1"** crashing the app. I can now reasonable justify my decision to keep the keyboard as just numbers.
 
-This is less of a challenge and more of just a note: Even with the app crashing more than half the time, it was fun doing a small project. Doing a single large project is satisfying in its own way, but getting multiple small projects is rewarding as well. Just getting it done is great for my mentality and experience. 
+This is less of a challenge and more of just a note to self: Even with the app crashing more than half the time, it was fun doing a small project. Doing a single large project is satisfying in its own way, but getting multiple small projects is rewarding as well. In general, just getting it done is great for my mentality and experience. 
 
 ## License
 
