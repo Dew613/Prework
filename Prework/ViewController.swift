@@ -34,6 +34,11 @@ class ViewController: UIViewController {
         startAnimation()
         billAmountTextField.becomeFirstResponder()
         
+        if let t = UserDefaults.standard.object(forKey: "lastInput") as? String
+        {
+            billAmountTextField.text = t
+        }
+        
     }
     
     func fadeOutAll(){
@@ -56,6 +61,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func billTextFieldEditingChanged(_ sender: Any) {
+        UserDefaults.standard.set(billAmountTextField.text, forKey: "lastInput")
         calculateTip(sender)
         calculateSplit(sender)
     }
