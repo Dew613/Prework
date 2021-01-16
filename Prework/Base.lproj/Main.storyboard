@@ -56,6 +56,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
+                                            <action selector="billTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="EtG-bR-ATH"/>
                                             <outletCollection property="gestureRecognizers" destination="jM8-w3-Taz" appends="YES" id="I3t-vi-y5G"/>
                                         </connections>
                                     </textField>

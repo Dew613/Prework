@@ -54,6 +54,13 @@ class ViewController: UIViewController {
 
     var total: Double = 0
     
+    
+    @IBAction func billTextFieldEditingChanged(_ sender: Any) {
+        calculateTip(sender)
+        calculateSplit(sender)
+    }
+    
+    
     @IBAction func calculateTip(_ sender: Any) {
         //checks if theres a value in the bill amount and uses that otherwise it defaults to 0
         let bill = Double(billAmountTextField.text!) ?? 0
@@ -64,7 +71,7 @@ class ViewController: UIViewController {
         
         total = bill + tip
         
-        
+        calculateSplit(sender)
         
         tipAmountLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
@@ -77,6 +84,8 @@ class ViewController: UIViewController {
         splitLabel.text = String(format: "Split: %01d%", Int(rounded))
         splitAmountLabel.text = String(format: "$%.2f", total/Double(rounded))
     }
+    
+    
     
 }
 
